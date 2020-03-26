@@ -1,0 +1,33 @@
+{
+  "name": "hapi-authz",
+  "version": "1.0.0",
+  "description": "Basic authorization middleware using casbin",
+  "main": "build/index.js",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "tsc": "tsc",
+    "tsc-watch": "tsc -w",
+    "test": "lab --sourcemaps --transform node_modules/lab-transform-typescript -a @hapi/code"
+  },
+  "keywords": [],
+  "author": "romitkarmakar<romitkarmakar@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "casbin": "^4.1.1"
+  },
+  "devDependencies": {
+    "@hapi/code": "^8.0.1",
+    "@hapi/hapi": "^19.1.1",
+    "@hapi/lab": "^22.0.4",
+    "@types/hapi": "^18.0.3",
+    "@types/node": "^12.12.31",
+    "lab-transform-typescript": "^3.0.1",
+    "typescript": "^3.8.3"
+  }
+}
