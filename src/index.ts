@@ -1,7 +1,7 @@
 import { Enforcer } from "casbin"
 import BasicAuthorizer from "./BasicAuthorizer"
 
-var hapiauthz = {
+var Hapiauthz = {
   pkg: require("../package.json"),
   register: async function (server, options) {
     server.ext("onRequest", async function (request, h) {
@@ -36,4 +36,7 @@ var hapiauthz = {
   }
 };
 
-module.exports = hapiauthz;
+export {
+  BasicAuthorizer,
+  Hapiauthz
+}

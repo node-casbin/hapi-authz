@@ -10,6 +10,7 @@ install:
   - "npm install -g codecov"
   - "npm install"
   - "npm run tsc"
+  - "npm test"
 
 os:
   - "linux"

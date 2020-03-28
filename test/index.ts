@@ -2,7 +2,7 @@ const Hapi = require("@hapi/hapi");
 import { newEnforcer } from "casbin";
 import * as Lab from '@hapi/lab';
 import { expect } from '@hapi/code';
-import BasicAuthorizer from "../build/BasicAuthorizer"
+import { Hapiauthz, BasicAuthorizer } from ".."
 
 const lab = Lab.script();
 const { describe, it, before } = lab;
@@ -24,7 +24,7 @@ describe("Basic authentication", () => {
     const enforcer = await newEnforcer('examples/model.conf', 'examples/policy.csv')
 
     await server.register({
-      plugin: require("../build/index"),
+      plugin: Hapiauthz,
       options: {
         newEnforcer: enforcer
       }
@@ -53,7 +53,7 @@ describe("Basic authentication", () => {
     const enforcer = await newEnforcer('examples/model.conf', 'examples/policy.csv')
 
     await server.register({
-      plugin: require("../build/index"),
+      plugin: Hapiauthz,
       options: {
         newEnforcer: enforcer,
         authorizer: (request, enforcer) => new MyAuthorizer(request, enforcer)
@@ -82,7 +82,7 @@ describe("Basic authentication", () => {
     const enforcer = await newEnforcer('examples/model.conf', 'examples/policy.csv')
 
     await server.register({
-      plugin: require("../build/index"),
+      plugin: Hapiauthz,
       options: {
         newEnforcer: enforcer
       }

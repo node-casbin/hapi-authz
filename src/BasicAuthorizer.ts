@@ -21,7 +21,7 @@ export default class BasicAuthorizer {
   // checkPermission checks the user/method/path combination from the request.
   // Returns true (permission granted) or false (permission forbidden)
   async checkPermission(): Promise<boolean> {
-    const user = this.getUserName()
+    const user: string = this.getUserName()
     return await this.enforcer.enforce(user, this.request.path, this.request.method);
   }
 }

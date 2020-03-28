@@ -3,13 +3,15 @@
   "version": "1.0.0",
   "description": "Basic authorization middleware using casbin",
   "main": "build/index.js",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
+  "typings": "build/index.d.ts",
   "directories": {
-    "lib": "lib",
+    "src": "src",
     "test": "test"
   },
+  "files": [
+    "build",
+    "examples"
+  ],
   "scripts": {
     "tsc": "tsc",
     "tsc-watch": "tsc -w",
@@ -17,13 +19,17 @@
   },
   "keywords": [],
   "author": "romitkarmakar<romitkarmakar@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/node-casbin/hapi-authz.git"
+  },
   "license": "ISC",
   "dependencies": {
+    "@hapi/hapi": "^19.1.1",
     "casbin": "^4.1.1"
   },
   "devDependencies": {
     "@hapi/code": "^8.0.1",
-    "@hapi/hapi": "^19.1.1",
     "@hapi/lab": "^22.0.4",
     "@types/hapi": "^18.0.3",
     "@types/node": "^12.12.31",

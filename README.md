@@ -5,7 +5,7 @@ This is a authorization middleware for Hapi js, and it is based on node-casbin.
 ## Installation
 
 ```shell
-npm i casbin hapi-authz
+npm i casbin hapi-authz --save
 ```
 
 ## Integration
@@ -22,7 +22,7 @@ const init = async () => {
     const enforcer = await newEnforcer('model.conf', 'policy.csv') // replace with your model and policy file location
 
     await server.register({  
-    plugin: require('hapiauthz'),
+    plugin: hapiauthz.Hapiauthz,
     options: {
       newEnforcer: enforcer
     }
@@ -38,7 +38,7 @@ This package provides ``BasicAuthorizer``, which checks the Authorization header
 If you want to use another authentication method like OAuth, you needs to extends ``BasicAuthorizer`` as below:
 
 ```js
-class MyAuthorizer extends BasicAuthorizer {
+class MyAuthorizer extends hapiauthz.BasicAuthorizer {
   constructor(request, enforcer) {
     super(request, enforcer);
   }
@@ -54,7 +54,7 @@ const init = async () => {
     const enforcer = await newEnforcer('model.conf', 'policy.csv') // replace with your model and policy file location
 
     await server.register({  
-    plugin: require('hapiauthz'),
+    plugin: hapiauthz.Hapiauthz,
     options: {
       newEnforcer: enforcer,
       authorizer: (request, option) => new MyAuthorizer(request, option)
