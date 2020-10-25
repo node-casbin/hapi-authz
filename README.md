@@ -1,6 +1,6 @@
 # Hapi Authz
 
-This is a authorization middleware for Hapi js, and it is based on node-casbin.
+This is a authorization middleware for [Hapi js](https://github.com/hapijs/hapi), and it is based on [Node-Casbin](https://github.com/casbin/node-casbin).
 
 ## Installation
 
