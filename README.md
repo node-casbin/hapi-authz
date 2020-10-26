@@ -5,7 +5,7 @@ This is a authorization middleware for [Hapi js](https://github.com/hapijs/hapi)
 ## Installation
 
 ```shell
-npm i casbin hapi-authz --save
+npm i casbin @casbin/hapi-authz --save
 ```
 
 ## Integration
@@ -13,7 +13,7 @@ npm i casbin hapi-authz --save
 - Register the plugin inside your index.js file.
 ```javascript
 const { newEnforcer } = require('casbin');
-const hapiauthz = require('hapi-authz');
+const hapiauthz = require('@casbin/hapi-authz');
 
 ...
 
