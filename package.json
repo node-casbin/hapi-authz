@@ -1,6 +1,6 @@
 {
   "name": "@casbin/hapi-authz",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Basic authorization middleware using casbin",
   "main": "build/index.js",
   "typings": "build/index.d.ts",
