@@ -1,5 +1,5 @@
 {
-  "name": "hapi-authz",
+  "name": "@casbin/hapi-authz",
   "version": "1.0.0",
   "description": "Basic authorization middleware using casbin",
   "main": "build/index.js",
@@ -23,17 +23,18 @@
     "type": "git",
     "url": "https://github.com/node-casbin/hapi-authz.git"
   },
-  "license": "ISC",
-  "dependencies": {
-    "@hapi/hapi": "^19.1.1",
-    "casbin": "^4.1.1"
-  },
+  "license": "Apache-2.0",
   "devDependencies": {
     "@hapi/code": "^8.0.1",
+    "@hapi/hapi": "^19.2.0",
     "@hapi/lab": "^24.1.0",
     "@types/hapi": "^18.0.3",
     "@types/node": "^12.12.31",
+    "casbin": "^5.1.6",
     "lab-transform-typescript": "^3.0.1",
     "typescript": "^3.8.3"
+  },
+  "publishConfig": {
+    "registry": "https://registry.yarnpkg.com"
   }
 }
