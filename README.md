@@ -1,5 +1,17 @@
 # Hapi Authz
 
+[![NPM version][npm-image]][npm-url]
+[![NPM download][download-image]][download-url]
+[![codebeat badge](https://codebeat.co/badges/45934fbd-c678-4164-a05a-6098b0c96250)](https://codebeat.co/projects/github-com-node-casbin-hapi-authz-master)
+[![Build Status](https://travis-ci.org/node-casbin/hapi-authz.svg?branch=master)](https://travis-ci.org/github/node-casbin/hapi-authz)
+[![Release](https://img.shields.io/github/release/node-casbin/hapi-authz.svg)](https://github.com/@casbin/hapi-authz/releases/latest)
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/casbin/lobby)
+
+[npm-image]: https://img.shields.io/npm/v/@casbin/hapi-authz.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/@casbin/hapi-authz
+[download-image]: https://img.shields.io/npm/dm/@casbin/hapi-authz.svg?style=flat-square
+[download-url]: https://www.npmjs.com/package/@casbin/hapi-authz
+
 This is a authorization middleware for [Hapi js](https://github.com/hapijs/hapi), and it is based on [Node-Casbin](https://github.com/casbin/node-casbin).
 
 ## Installation
