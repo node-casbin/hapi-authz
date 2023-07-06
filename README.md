@@ -5,7 +5,7 @@
 [![codebeat badge](https://codebeat.co/badges/45934fbd-c678-4164-a05a-6098b0c96250)](https://codebeat.co/projects/github-com-node-casbin-hapi-authz-master)
 [![Build Status](https://travis-ci.org/node-casbin/hapi-authz.svg?branch=master)](https://travis-ci.org/github/node-casbin/hapi-authz)
 [![Release](https://img.shields.io/github/release/node-casbin/hapi-authz.svg)](https://github.com/@casbin/hapi-authz/releases/latest)
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/casbin/lobby)
+[![Discord](https://img.shields.io/discord/1022748306096537660?logo=discord&label=discord&color=5865F2)](https://discord.gg/S5UjpzGZjN)
 
 [npm-image]: https://img.shields.io/npm/v/@casbin/hapi-authz.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/@casbin/hapi-authz
